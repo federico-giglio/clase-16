@@ -1,0 +1,11 @@
+<div class="container messages">
+    {{#if messages}}
+    {{#each messages}}
+        <div>
+        <p><b>{{user}}</b>[{{timestamp}}]:
+            <em>{{message}}</em>
+        </p>
+        </div>
+    {{/each}}
+    {{/if}}
+</div>

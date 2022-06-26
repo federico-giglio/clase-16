@@ -1,0 +1,27 @@
+<div class="container">
+    {{#if products}}
+        <h1>Productos</h1>
+        <table>
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>title</th>
+                <th>price</th>
+                <th>thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each products}}
+                <tr>
+                <th>{{id}}</th>
+                <th>{{title}}</th>
+                <th>${{price}}</th>
+                <th><img style="max-height: 25px; max-width: auto;" src={{thumbnail}} /></th>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    {{else}}
+        <h1>No hay productos.</h1>
+    {{/if}}
+</div>

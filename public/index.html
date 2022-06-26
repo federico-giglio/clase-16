@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Clase 16 SQL</title>
+    </head>
+    <body>
+    <div>
+        <form id="product_form">
+        <h2>Nuevo producto</h2>
+        <input
+            type="text"
+            id="title"
+            placeholder="Nombre"
+            required
+        />
+        <input
+            type="number"
+            id="price"
+            placeholder="Precio"
+            required
+        />
+        <input
+            type="url"
+            id="thumbnail"
+            placeholder="URL imagen"
+            required
+        />
+        <div>
+            <input
+            type="submit"
+            value="Agregar producto"
+            />
+        </div>
+        </form>
+    </div>
+    <div id="products" ></div>
+    <div>
+        <form id="chat_form">
+        <h2>Chat</h2>
+        <label for="email">Ingrese su email:</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+        />
+        <input
+            type="text"
+            id="message"
+            placeholder="Mensaje"
+            required
+        />
+        <input class="btn btn-primary" type="submit" value="Enviar mensaje">
+        </form>
+        <div id="chat"></div>
+    </div>
+    <script src="./app.js"></script>
+    </body>
+</html>
